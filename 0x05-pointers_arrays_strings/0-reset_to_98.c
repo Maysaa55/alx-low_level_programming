@@ -9,7 +9,7 @@ void reset_to_98(int *ip);
 
 int main(void)
 {
-int num = 40;
+int num = 402;
 int *ptr = &num;
 reset_to_98(ptr);
 printf("the value of num after resetting : %i\n", num);
