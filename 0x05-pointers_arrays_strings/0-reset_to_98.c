@@ -1,14 +1,14 @@
-#include <stdio.h>
-#include "main.h"
+//#include <stdio.h>
+//#include "main.h"
 
 /**
  * reset_to_98 - updates the value of the variable
  * the pointer points to to 98
  */
 
-void reset_to_98(int *ip);
+//void reset_to_98(int *ip);
 
-int main(void)
+/* int main(void)
 {
 int num = 402;
 printf("n=%d\n", num);
@@ -19,4 +19,16 @@ return (0);
 void reset_to_98(int *ip)
 {
 *ip = 98;
+} */
+
+#include "main.h"
+
+/**
+ * reset_to_98 - updates the value of the variable
+ * the pointer points to to 98
+ * @n: pointer to the variable to update
+ */
+void reset_to_98(int *n)
+{
+	*n = 98;
 }
