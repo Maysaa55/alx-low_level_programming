@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_alphabet_x10 - writes the alphabet in lowercase 10 times
