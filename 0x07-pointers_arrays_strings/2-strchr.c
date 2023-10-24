@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _strchr - eturns a pointer to the first occurrence of the
@@ -11,7 +11,6 @@
  */
 char *_strchr(char *s, char c)
 {
-int counter = 0 ;
 int i = 0 ;
 while(s[i] != '\0'){
 	if (s[i] == c)
