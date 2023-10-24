@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _strstr - finds the first occurrence of the substring needle in haystack
@@ -10,26 +10,22 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int l, l2, i, j, c;
-
-	l = 0, l2 = 0, c = 0;
-	while (haystack[l] != '\0')
-		l++;
-	while (needle[l2] != '\0')
-		l2++;
-	for (i = 0; i < l; i++, haystack++)
-	{
-		for (j = 0, c = 0; j < l2; j++)
-		{
-			if (haystack[j] == 0)
-				break;
-			if (haystack[j] == needle[j])
-			{
-				c += 1;
-			}
-		}
-		if (c == l2)
-			return (haystack);
+	int length = 0 ,length2 = 0 , counter = 0 , i ,j ;
+	while(haystack[length] != '\0'){
+		length++;
 	}
-	return (0);
+	while(needle[length2] != '\0'){
+		length2++;
+	}
+	for(i = 0 ; i < length ; i++ , heystack++){
+		for(j = 0 ; j < length2 ; j++){
+			if (heystack[j] == 0)
+				break;
+			if(heystack[j] == needle[j])
+				counter++ ;
+		}
+		if(counter == length2)
+			return(heystack);
+	}
+	return(0);
 }
