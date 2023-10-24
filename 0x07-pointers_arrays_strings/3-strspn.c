@@ -28,7 +28,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-		if (j == l2)
+		if (j == length2)
 			break;
 	}
 	return (byte);
