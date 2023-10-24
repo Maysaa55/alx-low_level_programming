@@ -20,15 +20,15 @@ char *_strstr(char *haystack, char *needle)
 	while(needle[length2] != '\0'){
 		length2++;
 	}
-	for(i = 0 ; i < length ; i++ , heystack++){
+	for(i = 0 ; i < length ; i++ , haystack++){
 		for(j = 0 , counter = 0 ; j < length2 ; j++){
-			if (heystack[j] == 0)
+			if (haystack[j] == 0)
 				break;
-			if(heystack[j] == needle[j])
+			if(haystack[j] == needle[j])
 				counter++ ;
 		}
 		if(counter == length2)
-			return(heystack);
+			return(haystack);
 	}
 	return(0);
 }
