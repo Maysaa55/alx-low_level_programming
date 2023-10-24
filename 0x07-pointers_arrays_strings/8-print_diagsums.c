@@ -17,6 +17,8 @@ int i , j ;
 int sum = 0 ;
 for (i = 0 ; i < size ; i++){
 	sum += a[i][i] ;}
+	printf("%i,",sum)
+		sum = 0 ;
 for (j = 0 ; j < size ; j++){
 	sum += a[j][size-j-1];}
 printf("%i\n",sum);
