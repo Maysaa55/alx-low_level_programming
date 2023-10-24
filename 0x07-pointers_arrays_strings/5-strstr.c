@@ -20,7 +20,7 @@ char *_strstr(char *haystack, char *needle)
 		length2++;
 	}
 	for(i = 0 ; i < length ; i++ , heystack++){
-		for(j = 0 , c = 0 ; j < length2 ; j++){
+		for(j = 0 , counter = 0 ; j < length2 ; j++){
 			if (heystack[j] == 0)
 				break;
 			if(heystack[j] == needle[j])
