@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _strspn - Returns the number of bytes in the initial segment of
@@ -11,25 +11,25 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int l, l2, i, j, byt;
+	int length, length2, i, j, byte;
 
-	l = 0, l2 = 0, byt = 0;
-	while (s[l] != '\0')
-		l++;
-	while (accept[l2] != '\0')
-		l2++;
-	for (i = 0; i < l; i++)
+	length = 0, l2 = 0, byte = 0;
+	while (s[length] != '\0')
+		length++;
+	while (accept[length2] != '\0')
+		length2++;
+	for (i = 0; i < length; i++)
 	{
 		for (j = 0; j < l2; j++)
 		{
 			if (*(s + i) == *(accept + j))
 			{
-				byt += 1;
+				byte += 1;
 				break;
 			}
 		}
 		if (j == l2)
 			break;
 	}
-	return (byt);
+	return (byte);
 }
