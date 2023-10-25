@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _strchr - eturns a pointer to the first occurrence of the
@@ -10,16 +10,11 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 char *_strchr(char *s, char c)
-{
-	int l, i;
-
-	l = 0;
-	while (s[l] != '\0')
-		l++;
-	for (i = 0; i <= l; i++, s++)
-	{
-		if (*s == c)
-			return (s);
-	}
-	return (0);
-}
+{int i=0;
+int j;
+while(s[i] != '\0'){
+i++;}
+for(j=0;j<=i;j++,s++){
+if (*s==c)
+return(s);}
+return(0);}
