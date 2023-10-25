@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _isdigit - returns 1 if digit, 0 otherwise
