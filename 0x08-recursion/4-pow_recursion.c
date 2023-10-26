@@ -8,11 +8,11 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int pow_recursion(int x, int y)
+int _pow_recursion(int x, int y)
 {
  if (y > 0)
  {
-  return pow_recursion(x, y - 1) * x;
+  return _pow_recursion(x, y - 1) * x;
  }
  if (y == 0)
   return 1;
