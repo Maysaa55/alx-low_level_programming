@@ -20,8 +20,3 @@ int _sqrt_recursion(int n)
 {
  return square(n, 1);
 }
-
-int main()
-{
- printf("%i", _sqrt_recursion(13));
-}
