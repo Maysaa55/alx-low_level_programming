@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdlib.h>
 int main(int argc , char* argv[]){
 for (int i = 0 ; i < argc ; i++ ){
 char * s = argv[i];
