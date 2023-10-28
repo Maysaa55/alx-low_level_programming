@@ -1,6 +1,11 @@
-#include<stdio.h>
+#include"main.h"
 int main(int argc , char* argv[])
 {
-printf("%s\n",argv[0]);
+char* str = argv[0];
+  while(str != '\0'){
+    _putchar(*str);
+    s++ ;
+  }
+  _putchar('\n');
 return 0 ;
 }
