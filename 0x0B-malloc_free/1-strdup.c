@@ -5,7 +5,8 @@ char *_strdup(char *str)
 {
  if (str == 0)
   return (0);
- int i = 0, j = 0;
+ int i = 0;
+ int j ;
  int count = 0;
  while (*(str + i) != '\0')
  {
@@ -17,7 +18,7 @@ char *_strdup(char *str)
  {
   *(s + j) = *(str + j);
  }
- *(s + count+1) = '\0';
+
  return s;
 }
 
