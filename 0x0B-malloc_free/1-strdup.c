@@ -3,7 +3,7 @@
 #include <stdlib.h>
 char *_strdup(char *str)
 {
- if (str == NULL)
+ if (str == 0)
   return (0);
  int i = 0, j = 0;
  int count = 1;
