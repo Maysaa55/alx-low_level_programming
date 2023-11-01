@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2){
 int length1 = _strlen(s1);
 int length2 = _strlen(s2);
 int length = length1 + length2 ;
-char* newcon = _strcat(s1 , s2 , length);
+char* newcon = _strcat(s1 , s2 );
 char *newstr = malloc(sizeof(char)*(length+1));
 newstr = _strcpy(newstr,newcon);
 return newstr ;
