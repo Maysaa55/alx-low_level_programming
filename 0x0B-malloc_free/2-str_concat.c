@@ -1,7 +1,7 @@
 #include"main.h"
 #include<stdio.h>
 #include<stdlib.h>
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int i, j, k;
 
@@ -10,11 +10,8 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	while (src[j] != '\0')
 		j++;
-	if (n < j)
-		j = n - 1;
 	for (k = 0; k <= j; k++, i++)
 		dest[i] = src[k];
-	dest[i + 1] = '\0';
 	return (dest);
 }
 char *_strcpy(char *dest, char *src)
