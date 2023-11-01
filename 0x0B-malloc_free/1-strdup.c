@@ -9,9 +9,10 @@
  */
 char *_strdup(char *str)
 {
-  int i ;
+ int i ;
  int j ;
-  int count ;
+ int count ;
+ char* s ;
  if (str == NULL)
   return NULL;
 
@@ -21,8 +22,7 @@ char *_strdup(char *str)
   count += 1;
   i++;
  }
- char* s ;
-  s = malloc(sizeof(char) * (count+1));
+ s = malloc(sizeof(char) * (count+1));
  for (j = 0; j < count; j++)
  {
   s[j] = str[j];
