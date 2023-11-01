@@ -11,7 +11,21 @@ int _strlen(char *s)
 	}
 	return (length);
 }
+char *_strcat(char *dest, char *src)
+{
+	int i, j, k;
 
+	i = 0, j = 0;
+	if(dest != 0)
+	while (dest[i] != '\n')
+		i++;
+	while (src[j] != '\0')
+		j++;
+	for (k = 0; k <= j; k++, i++)
+		dest[i] = src[k];
+	dest[i+j]='\n';
+	return (dest);
+}
 char *argstostr(int ac, char **av){
 int i ;
 int j ;
