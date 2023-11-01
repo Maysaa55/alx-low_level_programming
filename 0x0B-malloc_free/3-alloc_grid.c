@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
- * @grid: the address of the two dimensional grid
+ * alloc_grid-create a 2d array of integers with initial value 0
  * @width: width of the grid
  * @height: height of the grid
  *
