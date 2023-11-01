@@ -1,57 +1,42 @@
 #include"main.h"
 #include<stdio.h>
 #include<stdlib.h>
-char *_strcat(char *dest, char *src)
-{
-	int i, j, k;
 
-	i = 0, j = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0')
-		j++;
-	for (k = 0; k <= j ; k++, i++)
-		dest[i+1] = src[k];
-	return (dest);
-}
-char *_strcpy(char *dest, char *src)
+/**
+ * str_concat - concatenates two strings
+ * @s1: string1
+ * @s2: string2
+ *
+ * Return: Pointer
+ */
+char *str_concat(char *s1, char *s2)
 {
-	int i, j;
+	int l1, l2, i, j;
+	char *s;
+	char *nul = "";
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		i++;
-	}
-	for (j = 0; j <= i; j++)
-	{
-		dest[j] = *(src + j);
-	}
-	return (dest);
-}
-int _strlen(char *s)
-{
-	int length = 0;
-	
+	if (s1 == NULL)
+		s1 = nul;
+	if (s2 == NULL)
+		s2 = nul;
 
-		while (s[length] != '\0')
-	{
-		length++;
-	}
-	return (length);
-}
-char *str_concat(char *s1, char *s2){
-	int length1 ;
-	int length2 ;
-	char* newcon ;
-	char *newstr ;
-	int length ;
-length1 = _strlen(s1);
-length2 = _strlen(s2);
-length = length1 + length2 ;
-newcon = _strcat(s1 , s2 );
-newstr = malloc(sizeof(char)*(length+1));
-newstr = _strcpy(newstr,newcon);
-return newstr ;
+	l1 = 0, l2 = 0;
+	while (*(s1 + l1))
+		l1++;
+	while (*(s2 + l2))
+		l2++;
+
+	s = malloc(sizeof(char) * (l1 + l2 + 1));
+
+	if (s == 0)
+		return (0);
+
+	for (i = 0; i < l1; i++)
+		*(s + i) = *(s1 + i);
+
+	for (i = 0, j = l1; i <= l2; j++, i++)
+		*(s + j) = *(s2 + i);
+
+	return (s);
 }
 
