@@ -11,25 +11,12 @@ int _strlen(char *s)
 	}
 	return (length);
 }
-char *_strncat(char *dest, char *src, int n)
-{
-	int i, j, k;
 
-	i = 0, j = 0;
-	while (dest[i] != '\n')
-		i++;
-	while (src[j] != '\0')
-		j++;
-	if (n < j)
-		j = n - 1;
-	for (k = 0; k <= j; k++, i++)
-		dest[i] = src[k];
-	dest[i + 1] = '\n';
-	return (dest);
-}
 char *argstostr(int ac, char **av){
 int i ;
 int j ;
+int length1 ;
+int count = 0 ;
 int length = 0 ;
 if (ac == 0 || av == NULL)
  return NULL ;
@@ -39,7 +26,12 @@ length += _strlen(*(av+i));
 length += ac ;
 char* newstr = malloc(sizeof(char)*(length+ac));
 for ( j = 0 ; j < ac ; j++){
-_strcat( newstr, *(av+j));
+length1 = _strlen(*(av+j));
+for ( i = 0,k = count ; i < length1 ; i++,k++){
+newstr[k]=*(*(av+j)+i));
+}
+newstr[k+1]='\n';
+count += length1 ;
 }
 return newstr ;
 }
