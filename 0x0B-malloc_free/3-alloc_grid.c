@@ -6,7 +6,7 @@
  * @width: width of the grid
  * @height: height of the grid
  *
- * Return: Nothing.
+ * Return: int pointer to pointer
  */
 int **alloc_grid(int width, int height)
 {
