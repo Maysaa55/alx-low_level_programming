@@ -10,8 +10,8 @@ char *_strcat(char *dest, char *src)
 		i++;
 	while (src[j] != '\0')
 		j++;
-	for (k = 0; k <= j; k++, i++)
-		dest[i] = src[k];
+	for (k = 0; k <= j+1; k++, i++)
+		dest[i+1] = src[k];
 	return (dest);
 }
 char *_strcpy(char *dest, char *src)
