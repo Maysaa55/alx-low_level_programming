@@ -36,7 +36,7 @@ for (i = 0 ; i < ac ; i++){
 length += _strlen(*(av+i));
 }
 length += ac ;
-char* newstr = malloc(sizeof(char)*(length+ac));
+char* newstr = malloc(sizeof(char)*length);
 for ( j = 0 ; j < ac ; j++){
 _strcat( newstr, *(av+j));
 }
