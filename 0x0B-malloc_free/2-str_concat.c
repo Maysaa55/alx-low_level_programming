@@ -32,10 +32,7 @@ char *_strcpy(char *dest, char *src)
 int _strlen(char *s)
 {
 	int length = 0;
-	int length1 ;
-	int length2 ;
-	char* newcon ;
-	char *newstr ;
+	
 
 		while (s[length] != '\0')
 	{
@@ -44,6 +41,11 @@ int _strlen(char *s)
 	return (length);
 }
 char *str_concat(char *s1, char *s2){
+	int length1 ;
+	int length2 ;
+	char* newcon ;
+	char *newstr ;
+	int length ;
 length1 = _strlen(s1);
 length2 = _strlen(s2);
 length = length1 + length2 ;
