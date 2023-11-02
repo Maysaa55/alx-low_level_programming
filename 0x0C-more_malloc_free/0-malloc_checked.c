@@ -10,6 +10,9 @@
  */
 void *malloc_checked(unsigned int b)
 {
- return (void*)malloc(b);
+ void* s = (void*)malloc(b);
+ if(s == 0)
+ return (0);
+ return (s);
 }
 
