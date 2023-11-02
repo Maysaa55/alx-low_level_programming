@@ -20,6 +20,8 @@ char *str ;
  while (*(s1 + length) != '\0')
   length++;
  str = (char*)malloc(sizeof(char)*(length + n + 1));
+ if(str == 0)
+  return 98 ;
  for (k = 0; k < length; k++)
   *(str+k) = *(s1+k);
  for (j = 0; j < n; j++)
