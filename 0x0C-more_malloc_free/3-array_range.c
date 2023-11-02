@@ -24,13 +24,14 @@ int *array_range(int min, int max)
  }
  range = max - min + 1;
  arr = (int *)malloc(sizeof(int)*range);
+ if(arr == 0)
+  return (0);
  arr[0] = min;
  for (i = 1; arr[i] <= max; i++){
   arr[i] = min + 1;
   min += 1 ;
  }
  return (arr);
- return (0);
 }
 
 
