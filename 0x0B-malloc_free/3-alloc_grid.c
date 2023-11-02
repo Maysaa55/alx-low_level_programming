@@ -1,6 +1,13 @@
 #include"main.h"
 #include<stdio.h>
 #include<stdlib.h>
+/**
+ * alloc_grid-create a 2d array of integers with initial value 0
+ * @width: width of the grid
+ * @height: height of the grid
+ *
+ * Return: int pointer to pointer
+ */
 int **alloc_grid(int width, int height)
 {
 	int **arr;
