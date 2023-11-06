@@ -34,6 +34,10 @@ char* cpyowner = _strcpy(cpyowner,owner);
 dogg->name = name ;
 dogg->owner = owner ;
 dogg->age = age ;
+	if(dogg!=NULL)
+		return dogg ;
+	else 
+		return NULL ;
 
 }
 
