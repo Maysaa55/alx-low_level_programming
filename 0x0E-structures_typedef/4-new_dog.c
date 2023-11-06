@@ -10,35 +10,54 @@
  * Description - longer 
  *
  **/
-char *_strcpy(char *dest, char *src)
+char *_strdup(char *str)
 {
-	int i, j;
+	int l, i;
+	char *s;
 
-	i = 0;
-	while (src[i] != '\0')
+	if (str == NULL)
+		return (0);
+
+	l = 0;
+	while (*(str + l))
+		l++;
+
+	s = malloc(sizeof(char) * l + 1);
+
+	if (s == 0)
+		return (0);
+
+	for (i = 0; i <= l; i++)
 	{
-		i++;
+		*(s + i) = *(str + i);
 	}
-	for (j = 0; j <= i; j++)
+	return (s);
+}
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+	dog_t *new_dog;
+
+	new_dog = malloc(sizeof(struct dog));
+
+	if (new_dog == 0 || name == 0 || owner == 0)
+		return (0);
+
+	new_dog->name = _strdup(name);
+	if (new_dog->name == 0)
 	{
-		dest[j] = *(src + j);
+		free(new_dog);
+		return (0);
 	}
-	return (dest);
+	new_dog->age = age;
+	new_dog->owner = _strdup(owner);
+	if (new_dog->owner == 0)
+	{
+		free(new_dog);
+		free(new_dog->name);
+		return (0);
+	}
+	return (new_dog);
 }
 
-dog_t *new_dog(char *name, float age, char *owner){
-dog_t* dogg ;
-dogg = malloc(sizeof(struct dog));
-if(dogg!=NULL){
-char* cpyname = _strcpy(cpyname,name) ;
-char* cpyowner = _strcpy(cpyowner,owner);
-dogg->name = name ;
-dogg->owner = owner ;
-dogg->age = age ;
-		return dogg ;
-}
-	else 
-		return NULL ;
-
-}
 
