@@ -29,14 +29,14 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner){
 dog_t* dogg ;
 dogg = malloc(sizeof(struct dog));
-float agecpy = age ;
+if(dogg!=NULL){
 char* cpyname = _strcpy(cpyname,name) ;
 char* cpyowner = _strcpy(cpyowner,owner);
 dogg->name = name ;
 dogg->owner = owner ;
 dogg->age = age ;
-	if(dogg!=NULL)
 		return dogg ;
+}
 	else 
 		return NULL ;
 
