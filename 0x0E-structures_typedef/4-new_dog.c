@@ -28,6 +28,7 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner){
 dog_t* dogg ;
+dogg = malloc(sizeof(struct dog));
 float agecpy = age ;
 char* cpyname = _strcpy(cpyname,name) ;
 char* cpyowner = _strcpy(cpyowner,owner);
