@@ -5,6 +5,9 @@
 /**
  * print_dog - prints the parameters of the dog struct
  * @d: struct pointer points to the printed struct
+ *
+ * Description - longer one
+ *
  **/
 void print_dog(struct dog *d){
 if (d != NULL){
