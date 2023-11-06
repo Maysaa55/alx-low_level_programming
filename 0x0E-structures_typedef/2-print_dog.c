@@ -14,8 +14,9 @@ if(d->name == NULL)
  d->name = tmp ;
 printf("Name: %s",d->name);
 if(d->age == NULL)
- d->age = tmp ;
-printf("Age: %f",d->age);
+printf("Age: %f",d->tmp);
+else 
+	printf("Age: %f",d->age);
 if(d->owner == NULL)
  d->owner = tmp ;
 printf("Owner: %s",d->owner);
