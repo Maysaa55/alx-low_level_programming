@@ -9,7 +9,7 @@ for(i = 1 ; i < n ; i++){
 if(separator == NULL)
 printf("%i\n",arg(ptr,int);
 else 
-printf("%i%s",arg(ptr,int),separator)
+printf("%i%s",arg(ptr,int),separator);
 }
 va_end(ptr);
 }
