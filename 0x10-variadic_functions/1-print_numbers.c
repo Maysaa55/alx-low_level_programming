@@ -15,7 +15,10 @@ unsigned int i ;
 va_list ptr ;
 va_start(ptr,n);
   if(separator == NULL)
-    separator ="";
+    //separator ="";
+    for(i = 0 ; i < n-1 ; i++)
+    printf("%i",va_arg(ptr,int));
+  else
 for(i = 0 ; i < n-1 ; i++){
 printf("%i%s",va_arg(ptr,int),separator);
 }
