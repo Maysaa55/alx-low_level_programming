@@ -17,7 +17,7 @@ for(i = 0 ; i < n-1 ; i++ ){
 	else 
         printf("%s%s",str,separator);
 		}
-printf("%s\n",va_arg(ptr,char*);
+printf("%s\n",va_arg(ptr,char*));
 }
 va_end(ptr);
 }
