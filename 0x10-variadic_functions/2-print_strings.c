@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_string - print strings given as arguements .
+ * print_strings - print strings given as arguements .
  * @separator: the string which separated between the printed strings .
  * @n: the number of strings to print .
  *
@@ -15,14 +15,13 @@ char * str;
 va_list ptr ;
 char tmp[] = "(nil)";
 va_start(ptr,n);
+if (separator == NULL)
+	separator = "";
 if(n > 0){
 for(i = 0 ; i < n-1 ; i++ ){
 	str = va_arg(ptr,char*);
 	if (str == NULL)
 	  str = tmp;
-	if(separator == NULL)
-		printf("%s",str);
-	else 
         printf("%s%s",str,separator);
 		}
 printf("%s\n",va_arg(ptr,char*));
