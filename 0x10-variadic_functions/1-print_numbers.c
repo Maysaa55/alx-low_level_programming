@@ -25,6 +25,6 @@ printf("%d\n",va_arg(ptr,int));
 va_end(ptr);
 }
 if(n==0)
-	printf('\n');
+	printf("\n");
 }
 
