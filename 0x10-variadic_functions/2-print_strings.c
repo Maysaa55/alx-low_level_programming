@@ -6,9 +6,9 @@ unsigned int i ;
 char * str;
 va_list ptr ;
 char tmp[] = "(nil)";
-va_start(ptr+1,n);
+va_start(ptr,n);
 if(n != 0){
-for(i = 0 ; i < n ; i++ ){
+for(i = 0 ; i < n-1 ; i++ ){
 	str = va_arg(ptr,char*);
 	if (str == NULL)
 	  str = tmp;
@@ -17,9 +17,8 @@ for(i = 0 ; i < n ; i++ ){
 	else 
         printf("%s%s",str,separator);
 		}
-
+printf("%s\n",va_arg(ptr,char*);
 }
 va_end(ptr);
-_putchar('\n');
 }
 
