@@ -8,9 +8,9 @@ va_start(ptr,n);
   if(separator == NULL)
     separator ="";
 for(i = 0 ; i < n-1 ; i++){
-printf("%i%s",arg(ptr,int),separator);
+printf("%i%s",va_arg(ptr,int),separator);
 }
-printf("%i\n",arg(ptr,int);
+printf("%i\n",va_arg(ptr,int));
 va_end(ptr);
 }
 
