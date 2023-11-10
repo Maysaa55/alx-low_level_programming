@@ -6,7 +6,7 @@ unsigned int i ;
 char * str;
 va_list ptr ;
 char tmp[] = "(nil)";
-va_start(ptr,n);
+va_start(ptr+1,n);
 if(n != 0){
 for(i = 0 ; i < n ; i++ ){
 	str = va_arg(ptr,char*);
