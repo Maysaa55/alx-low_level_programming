@@ -9,7 +9,7 @@ for(i = 1 , k = 0 ; i < n ; k++ , i++){
 if(separator[k] == NULL)
 printf("%i\n",arg(ptr,int);
 else 
-printf("%i%c",arg(ptr,int),separator[k])
+printf("%i%s",arg(ptr,int),separator[k])
 }
 va_end(ptr);
 }
