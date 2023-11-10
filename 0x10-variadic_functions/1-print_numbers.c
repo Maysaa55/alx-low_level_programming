@@ -1,6 +1,15 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include<stdio.h>
+
+/**
+ * print_numbers - prints the numbers passed as arguments.
+ * @separator: the separater string between the numbers .
+ * @n: the size or the count of the numbers to be printed .
+ *
+ * Return - nothing .
+ */
+
 void print_numbers(const char *separator, const unsigned int n, ...){
 unsigned int i ;
 va_list ptr ;
