@@ -18,9 +18,9 @@ va_start(ptr,n);
     separator ="";
     
 for(i = 0 ; i < n-1 ; i++){
-printf("%i%s",va_arg(ptr,int),separator);
+printf("%d%s",va_arg(ptr,int),separator);
 }
-printf("%i\n",va_arg(ptr,int));
+printf("%d\n",va_arg(ptr,int));
 va_end(ptr);
 }
 
