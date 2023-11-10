@@ -3,18 +3,18 @@
 #include <stdio.h>
 void print_strings(const char *separator, const unsigned int n, ...){
 unsigned int i ;
-char tmp = "(nil)";
-if(n != 0){
 va_list ptr ;
+char tmp = "(nil)";
 va_start(ptr,n);
+if(n != 0){
 for(i = 0 ; i < n ; i++ ){
 	char * str = va_arg(ptr,char*);
 	if (str == NULL)
 		str = tmp;
-		if(separator == NULL)
+	if(separator == NULL)
 		printf("%s",str);
-		else 
-                printf("%s%s",str,separator);
+	else 
+        printf("%s%s",str,separator);
 		}
 
 }
