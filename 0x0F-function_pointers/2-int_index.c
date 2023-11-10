@@ -9,9 +9,9 @@
  * Return - the searched for element's index or -1 if not found .
  */
 int int_index(int *array, int size, int (*cmp)(int)){
-	
+	  int i ;
 	 if (array != 0 && size > 0 ){
-	        int i ;
+	      
 		for(i = 0 ; i < size ; i++){
 		if(cmp(array[i])
 			return i ;
