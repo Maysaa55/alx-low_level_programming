@@ -9,7 +9,7 @@
  * Return - nothing .
  **/
 void array_iterator(int *array, size_t size, void (*action)(int)){
-if (arr != 0){
+if (action != 0 && size >= 1 && array != 0){
 int k ;
 for(k = 0 ; k < size ; k++)
 	action(array[k]);
