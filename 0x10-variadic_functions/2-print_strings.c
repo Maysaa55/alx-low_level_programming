@@ -27,5 +27,7 @@ for(i = 0 ; i < n-1 ; i++ ){
 printf("%s\n",va_arg(ptr,char*));
 }
 va_end(ptr);
+if(n==0)
+	printf("\n");
 }
 
