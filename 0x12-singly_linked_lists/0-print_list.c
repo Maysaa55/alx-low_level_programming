@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 size_t print_list(const list_t *h){
-size_t counter ;
+unsigned int counter ;
 list_t *temp ;
 counter = 0;
 temp = h;
@@ -18,6 +18,6 @@ printf("%s",temp->str);
 }
 temp = temp->next;
 }
-
 return (counter);
 }
+
