@@ -14,13 +14,12 @@ unsigned int counter ;
 counter = 0;
 while (h != NULL){
 counter ++;
-if (h->str == NULL){
-        printf("%s","[0] (nil)");
-}
-else {
-printf("[%d] ",h->len); 
-printf("%s",h->str);
-}
+if (h->str == NULL)
+printf("[0] (nil)");
+
+else 
+printf("[%i] %s\n",h->len,h->str); 
+
 h = h->next;
 }
 return (counter);
