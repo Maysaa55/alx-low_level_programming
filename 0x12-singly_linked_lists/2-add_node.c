@@ -41,7 +41,7 @@ list_t temp ;
 temp =malloc(sizeof(list_t));
 temp->str = _strdup(str);
 temp->len = strlen(str);
-temp->next = head ;
+temp->next = *head ;
 *head = temp ;
 return temp;
 }
