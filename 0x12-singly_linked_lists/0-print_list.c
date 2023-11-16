@@ -12,16 +12,16 @@
 size_t print_list(const list_t *h){
 unsigned int counter ;
 counter = 0;
-while (h != NULL){
-counter ++;
-if (h->str == NULL)
-printf("[0] (nil)");
-
-else 
-printf("[%i] %s\n",h->len,h->str); 
-
-h = h->next;
+while (h != NULL)
+	{
+		if (h->str != 0)
+			printf("[%i] %s\n", h->len, h->str);
+		else
+			printf("[0] (nil)\n");
+		h = h->next;
+		counter++;
+	}
+	return (counter);
 }
-return (counter);
 }
 
