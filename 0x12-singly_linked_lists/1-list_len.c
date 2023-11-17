@@ -1,5 +1,5 @@
 #include "lists.h"
-/*
+/**
  * list_len - returns the number of nodes in the list 
  * @h: pointer 
  *
