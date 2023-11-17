@@ -23,5 +23,4 @@ while (h != NULL)
 	}
 	return (counter);
 }
-}
 
