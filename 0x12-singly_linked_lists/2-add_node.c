@@ -37,8 +37,8 @@ char *_strdup(const char *str)
  */
 
 list_t *add_node(list_t **head, const char *str){
-list_t temp ;
-temp =malloc(sizeof(list_t));
+list_t *temp ;
+temp =(list_t*)malloc(sizeof(list_t));
 temp->str = _strdup(str);
 temp->len = strlen(str);
 temp->next = *head ;
