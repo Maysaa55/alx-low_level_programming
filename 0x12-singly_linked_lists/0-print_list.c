@@ -9,17 +9,19 @@
  * Return: Number of elements in list
  */
 
-size_t print_list(const list_t * h) {
+size_t print_list(const list_t * h)
+{
   unsigned int counter;
   
   counter = 0;
-  while (h != NULL) {
-    if (h -> str != 0)
+  while (h != NULL)
+    {
+    if(h -> str != 0)
       printf("[%i] %s\n", h -> len, h -> str);
     else
       printf("[0] (nil)\n");
     h = h -> next;
-    counter++;
+    counter ++;
   }
   return (counter);
 }
