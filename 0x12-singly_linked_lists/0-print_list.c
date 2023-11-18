@@ -1,7 +1,5 @@
 #include "lists.h"
-
 #include <stdio.h>
-
 #include <stddef.h>
 
 /**
@@ -13,6 +11,7 @@
 
 size_t print_list(const list_t * h) {
   unsigned int counter;
+  
   counter = 0;
   while (h != NULL) {
     if (h -> str != 0)
