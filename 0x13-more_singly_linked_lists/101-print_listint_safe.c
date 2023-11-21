@@ -1,9 +1,10 @@
 #include "lists.h"
-
+#include<stdio.h>
+#include<stddef.h>
 size_t print_listint_safe(const listint_t *head)
 {
 	int count;
-        listint_t const *tmp;
+        listint_t *tmp;
 	tmp = head;
 	count = 0;
 	while(tmp != NULL)
