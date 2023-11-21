@@ -5,7 +5,7 @@ listint_t *reverse_listint(listint_t **head)
 	if (head->next == 0)
 	{
 		printf("%d\n",head->n);
-		temp = head;
+		temp = *head;
 		free(head);
 		return (temp);
 	}
