@@ -3,7 +3,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	int count;
-	listint_t *tmp;
+	const listint_t *tmp;
 	tmp = head;
 	count = 0;
 	while(tmp != NULL)
