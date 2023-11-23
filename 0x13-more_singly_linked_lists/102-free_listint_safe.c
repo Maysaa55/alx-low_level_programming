@@ -5,12 +5,12 @@ size_t free_listint_safe(listint_t **h)
 	int count;
 	count = 0;
 
-	if (head)
+	if (h)
 	{
-		while (*head != 0)
+		while (*h != 0)
 		{
-			tmp = *head;
-			*head = tmp->next;
+			tmp = *h;
+			*h = tmp->next;
 			free(tmp);
 			count++;
 		}
