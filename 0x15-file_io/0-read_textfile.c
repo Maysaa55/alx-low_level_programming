@@ -23,7 +23,7 @@ else
 		return (0);
 	while ((c = fgetc(fp)) != EOF && counter <= letters)
 	{
-		write(1,&c,1);
+		write(1, &c, 1);
 		counter++;
 	}
 	fclose(fp);
