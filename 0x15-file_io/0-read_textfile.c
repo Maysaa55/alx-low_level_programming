@@ -1,32 +1,32 @@
 #include "main.h"
 
 /**
- * ssize_t read_textfile - reads the text file and print it 
+ * ssize_t read_textfile - reads the text file and print it
  * @filename: points to the file's name
- * @letters: the number of letters to print 
+ * @letters: the number of letters to print
  *
- * Return - the number of the letters it could read and print 
+ * Return - the number of the letters it could read and print
  */
-ssize_t read_textfile(const char *filename, size_t letters){
-FILE *fp ;
-char c ;
-int counter ;
-counter = 0 ;
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+FILE *fp;
+char c;
+size_t counter;
+
+counter = 0;
 if (filename == 0)
 	return (0);
-else 
+else
 {
-	fp = fopen (filename, "r");
+	fp = fopen(filename, "r");
 	if (fp == 0)
 		return (0);
-	else 
+	while ((c = fgetc(fp)) != EOF && counter <= letters)
 	{
-		while ((c = fgetc(fp)) != EOF && counter >= letters){
-			_putchar(c);
-			counter++; 
-		}
-		fclose(fp);
+		write(1,&c,1);
+		counter++;
 	}
+	fclose(fp);
 	return (counter);
 }
 }
