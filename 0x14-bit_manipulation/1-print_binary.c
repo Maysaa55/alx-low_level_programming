@@ -7,7 +7,6 @@
  * Return: No return
  *
  */
-int _putchar(char c);
 void print_binary(unsigned long int n)
 {
 	int i, count;
@@ -17,9 +16,9 @@ void print_binary(unsigned long int n)
 			if (((n >> i)&1) == 0)
 				count++;
 			else if ((((n >> i)&1) == 0) && count > 0)
-				_putchar(48);
+				write(1, 48, 1);
 			else if (((n >> i)&1) == 1)
-			_putchar(49);
+			write(1, 49, 1);
 		}
 	_putchar('\n');
 }
