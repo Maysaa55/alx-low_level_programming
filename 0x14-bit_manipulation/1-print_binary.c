@@ -7,6 +7,7 @@
  * Return: No return
  *
  */
+int _putchar(char c);
 void print_binary(unsigned long int n)
 {
 	int i, count;
