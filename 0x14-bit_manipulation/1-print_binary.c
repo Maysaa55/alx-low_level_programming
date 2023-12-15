@@ -8,6 +8,11 @@
  * Return: No return
  *
  */
+int write_char(int str)
+{
+	write(1, &str, 1);
+	return (1);
+}
 void print_binary(unsigned long int n)
 {
 	int i, count;
@@ -17,9 +22,9 @@ void print_binary(unsigned long int n)
 			if (((n >> i)&1) == 1)
 				count++;
 			else if ((((n >> i)&1) == 0) && count > 0)
-				printf("%i",0);
+				write_char(48);
 			else if (((n >> i)&1) == 1)
-					printf("%i",1);
+					write_char(49);
 		}
-	printf("\n");
+	write_char(\n);
 }
