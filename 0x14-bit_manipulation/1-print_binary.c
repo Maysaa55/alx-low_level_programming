@@ -8,10 +8,9 @@
  * Return: No return
  *
  */
-int write_char(int str)
+voir write_char(int str)
 {
 	write(1, &str, 1);
-	return (1);
 }
 void print_binary(unsigned long int n)
 {
