@@ -8,8 +8,9 @@
  * there is one or more chars in the string b that is not 0 or 1
  * or if b is NULL
  */
-unsigned int binary_to_uint(const char *b){
-  if(b == 0)
+unsigned int binary_to_uint(const char *b)
+{
+  if (b == 0)
     return (0);
   else
   {
@@ -24,7 +25,7 @@ unsigned int binary_to_uint(const char *b){
  {
      if (b[i] == '1')
   {
-    sum += (2 *counter);
+    sum += (2*counter);
     counter *= 2;
   }
     else if (b[i] == '0')
