@@ -13,14 +13,14 @@ unsigned int binary_to_uint(const char *b){
     return (0);
   else
   {
-    int sum, len, counter;
+    int sum, len, counter, i;
 
     sum = 0; len = 0; counter = 1;
     while (b[len] != '\0')
      len++;
     if (b[len - 1] == '1')
      sum = 1;
-    for (int i = len - 2; i >= 0; i--)
+    for (i = len - 2; i >= 0; i--)
  {
      if (b[i] == '1')
   {
