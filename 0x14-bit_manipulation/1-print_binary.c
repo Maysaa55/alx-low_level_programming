@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 	count = 0;
 	for(i = 15; i >= 0; i--)
 		{
-			if (((n >> i)&1) == 0)
+			if (((n >> i)&1) == 1)
 				count++;
 			else if ((((n >> i)&1) == 0) && count > 0)
 				printf("%i",0);
