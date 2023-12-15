@@ -16,7 +16,7 @@ else
 {
 int sum, len, counter, i;
 
-sum = 0; 
+sum = 0;
 len = 0;
 counter = 1;
 while (b[len] != '\0')
