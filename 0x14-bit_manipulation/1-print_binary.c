@@ -20,5 +20,5 @@ void print_binary(unsigned long int n)
 			else if (((n >> i)&1) == 1)
 			write(1, & 49, 1);
 		}
-	_putchar('\n');
+	//_putchar('\n');
 }
