@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 				count++;
 			else if ((((n >> i)&1) == 0) && count > 0)
 				_putchar(0);
-			else if ((((n >> i)&1) == 1)
+			else if (((n >> i)&1) == 1)
 			_putchar(1);
 		}
 	_putchar('\n');
