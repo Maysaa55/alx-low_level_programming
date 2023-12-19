@@ -17,6 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 FILE *fp;
 char c;
 size_t counter;
+char *text[letters];
 
 counter = 0;
 if (filename == 0)
@@ -31,6 +32,8 @@ else
 		write(1, &c, 1);
 		counter++;
 	}
+	if (write(fp, text, sizeof(text)-1) == -1)
+		return (0);
 	fclose(fp);
 	return (counter);
 }
