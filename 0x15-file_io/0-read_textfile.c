@@ -32,8 +32,8 @@ else
 		write(1, &c, 1);
 		counter++;
 	}
-	if (write(fp, text, sizeof(text)-1) == -1)
-		return (0);
+	/*if (write(fp, text, sizeof(text)-1) == -1)
+		return (0);*/
 	fclose(fp);
 	return (counter);
 }
