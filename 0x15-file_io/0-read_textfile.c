@@ -17,7 +17,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 FILE *fp;
 char c;
 size_t counter;
-char *text[letters];
 
 counter = 0;
 if (filename == 0)
