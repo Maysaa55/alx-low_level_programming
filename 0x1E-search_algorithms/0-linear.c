@@ -8,7 +8,7 @@ if (array == 0)
 for (ind = 0; ind < size; ind++)
 {
 	printf("Value checked array[%lu] = [%d]\n", ind, *(array + ind));
-	if(*(array + ind) == value)
+	if (*(array + ind) == value)
 	{
 		return (ind);
 	}
