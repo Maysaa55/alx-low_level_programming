@@ -6,10 +6,10 @@ if(array == 0)
 	return -1;
 for(ind = 0; ind < size; ind++)
 {
-	printf("Value checked array[", ind, "] = [", *(array+ind), "]\n");
+	printf("Value checked array[%d] = [%d]\n", ind, *(array+ind));
 	if(*(array+ind) == value)
 	{
-		printf("Found ", value, "at index: ", ind, '\n');
+		printf("Found %d at index: %d\n", value, ind);
 		return ind;
 
 	}
