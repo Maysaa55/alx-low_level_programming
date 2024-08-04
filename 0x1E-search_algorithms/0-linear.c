@@ -9,9 +9,7 @@ for(ind = 0; ind < size; ind++)
 	printf("Value checked array[%lu] = [%d]\n", ind, *(array+ind));
 	if(*(array+ind) == value)
 	{
-		//printf("Found %d at index: %lu\n", value, ind);
 		return ind;
-
 	}
 }
 return -1;
